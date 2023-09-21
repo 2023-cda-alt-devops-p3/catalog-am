@@ -14,7 +14,7 @@ body {
     color: #333;
     font-size: 16px;
     line-height: 1.6;
-    text-align: center;
+    text-align: justify-all;
 }
 
 /* Style de l'en-tête (header) */
@@ -61,21 +61,21 @@ nav a:hover {
 }
 
 /* Style du conteneur principal */
-.container {
+/*.container {
     max-width: 1000px;
     margin: 0 auto;
     padding: 20px;
 }
 
 /* Style du titre h2 dans le conteneur principal */
-.container h2 {
+/*.container h2 {
     font-size: 24px;
     margin-bottom: 10px;
 }
 
 /* Style du paragraphe dans le conteneur principal */
-.container p {
+/*.container p {
     font-size: 16px;
     line-height: 1.5;
     margin-bottom: 20px;
-}
+} 
