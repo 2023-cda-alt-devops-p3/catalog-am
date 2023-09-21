@@ -40,7 +40,7 @@
 
 En génie logiciel, un diagramme de classes dans le  langage de modélisation unifié (UML)  est  un type de diagramme de structure statique  qui décrit la structure d’un système en montrant les classes du système, leurs attributs, opérations (ou méthodes) et les relations entre les objets.<br><br>
 
-Objectif des diagrammes de classes<br><br>
+<h3> Objectif des diagrammes de classes </h3>
 
 1. Affiche la structure statique des classificateurs dans un système <br>
 2. Le diagramme fournit une notation de base pour les autres diagrammes de structure prescrits par UML <br>
@@ -54,52 +54,52 @@ Un diagramme de classes UML est composé de : <br>
 
 <h3> Diagramme de classes – Exemple d’outil de diagramme </h3> 
 
-Un diagramme de classes peut également avoir des notes attachées aux classes ou aux relations. Les notes sont affichées en gris.
-                <img src="img\1_DiagClasse.png" alt="Une belle image">
-<br> Dans l’exemple ci-dessus :
+<p> Un diagramme de classes peut également avoir des notes attachées aux classes ou aux relations. Les notes sont affichées en gris. </p>
 
-Nous pouvons interpréter la signification du diagramme de classes ci-dessus en lisant les points comme suit. <br>
+<img src="img\1_DiagClasse.png" alt="Une belle image">
 
+Dans l’exemple ci-dessus :
+
+<p> Nous pouvons interpréter la signification du diagramme de classes ci-dessus en lisant les points comme suit. </p>
+
+<ul>
 1. Shape est une classe abstraite. Il est indiqué en italique. <br>
 2. La forme est une super-classe. Cercle, Rectangle et Polygone sont dérivés de Forme. En d’autres termes, un cercle est une forme. Il s’agit d’une relation généralisation/héritage. <br>
 3. Il existe une association entre DialogBox et DataController. <br>
-4. La forme fait partie de Window. Il s’agit d’une relation d’agrégation. La forme peut exister sans fenêtre. <br>
-5. Point fait partie de Circle. Il s’agit d’une relation de composition. Point ne peut pas exister sans cercle. <br>
+4. La forme fait partie de Window. Il s’agit d’une relation d’agrégation. La forme peut exister sans fenêtre. <br> 
+5. Point fait partie de Circle. Il s’agit d’une relation de composition. Point ne peut pas exister sans cercle. <br> 
 6. La fenêtre dépend de l’événement. Cependant, Event ne dépend pas de Window. <br>
 7. Les attributs du cercle sont le rayon et le centre. Il s’agit d’une classe d’entités. <br>
 8. Les noms de méthode de Circle sont area(), circum(), setCenter() et setRadius(). <br>
 9. Le paramètre radius dans Circle est un paramètre in de type float. <br>
 10. La méthode area() de la classe Circle renvoie une valeur de type double. <br>
-11. Les attributs et les noms de méthodes de Rectangle sont masqués. Certaines autres classes du diagramme ont également leurs attributs et leurs noms de méthode masqués. <br>
-Le deuxième type de diagramme le plus populaire dans UML est le diagramme d’activité :
-</p>
+11. Les attributs et les noms de méthodes de Rectangle sont masqués. Certaines autres classes du diagramme ont également leurs attributs et leurs noms de méthode masqués. </ul>
 
     <h2> Diagramme d'activité </h2>
         <p id="paragraphe2"> 
 
-Le diagramme d’activité est un autre diagramme de comportement important dans le diagramme  UML  pour décrire les aspects dynamiques du système. Le diagramme d’activité est essentiellement une version avancée de l’organigramme qui modélise le flux d’une activité à une autre activité. <br>
+<p> Le diagramme d’activité est un autre diagramme de comportement important dans le diagramme  UML  pour décrire les aspects dynamiques du système. Le diagramme d’activité est essentiellement une version avancée de l’organigramme qui modélise le flux d’une activité à une autre activité. </p>
 
-Quand utiliser le diagramme d’activité <br><br>
+<h3> Quand utiliser le diagramme d’activité </h3>
 
-Les diagrammes d’activité décrivent comment les activités sont coordonnées pour fournir un service qui peut se situer à différents niveaux d’abstraction. En règle générale, un événement doit être réalisé par certaines opérations, en particulier lorsque l’opération est destinée à réaliser un certain nombre de choses différentes qui nécessitent une coordination, ou comment les événements dans un cas d’utilisation unique sont liés les uns aux autres, en particulier, les cas d’utilisation où les activités peuvent se chevaucher et nécessiter une coordination. Il convient également à la modélisation de la manière dont une collection de cas d’utilisation se coordonne pour représenter les flux de travail métier.<br>
+<p> Les diagrammes d’activité décrivent comment les activités sont coordonnées pour fournir un service qui peut se situer à différents niveaux d’abstraction. En règle générale, un événement doit être réalisé par certaines opérations, en particulier lorsque l’opération est destinée à réaliser un certain nombre de choses différentes qui nécessitent une coordination, ou comment les événements dans un cas d’utilisation unique sont liés les uns aux autres, en particulier, les cas d’utilisation où les activités peuvent se chevaucher et nécessiter une coordination. Il convient également à la modélisation de la manière dont une collection de cas d’utilisation se coordonne pour représenter les flux de travail métier. </p>
 
 1.Identifier les cas d’utilisation candidats, grâce à l’examen des flux de travail de l’entreprise<br>
 2.Identifier les conditions préalables et postérieures (le contexte) pour les cas d’utilisation<br>
 3.Modélisez les flux de travail entre/au sein des cas d’utilisation<br>
 4.Modélisez des workflows complexes dans des opérations sur des objets<br>
-5.Modélisez en détail des activités complexes dans un diagramme d’activité de haut niveau<br>
-6.Diagramme d’activité — Apprendre par des exemples<br>
+5.Modélisez en détail des activités complexes dans un diagramme d’activité de haut niveau<br><br>
 
-Diagramme d’activité — Apprendre par des exemples
+<h3>  Diagramme d’activité — Apprendre par des exemples </h3>
 
-Un diagramme d’activité de base – un organigramme comme :
+Un diagramme d’activité de base – un organigramme comme : <br>
 <img src="img\2_1DiagActivite.png" alt="Une belle image">
 
-Exemple de diagramme d’activité — Ordre de processus
+<br> Exemple de diagramme d’activité — Ordre de processus
 
 Compte tenu de la description du problème lié au workflow de traitement d’une commande, modélisons la description en représentation visuelle à l’aide d’un diagramme d’activité :<br>
 
-Ordre de traitement — Description du problème<br>
+<br> <br> Ordre de traitement — Description du problème <br>
 
 Une fois la commande reçue, les activités se divisent en deux ensembles parallèles d’activités. Un côté remplit et envoie la commande tandis que l’autre s’occupe de la facturation.<br>
 
@@ -111,19 +111,19 @@ L’exemple de diagramme d’activité ci-dessous visualise le flux sous forme g
 <img src="img\2_2DiagActivite.png" alt="Une belle image">
 
  </p>
-        <img src="img\2classeUML.png" alt="Une belle image">
 
     <h2>Diagramme de séquençage</h2>
-        <p id="paragraphe2"> 
 
 Les diagrammes de séquence UML  sont des diagrammes d’interaction qui détaillent la façon dont les opérations sont effectuées. Ils capturent l’interaction entre les objets dans le cadre d’une collaboration. Les diagrammes de séquence sont centrés sur le temps et ils montrent visuellement l’ordre de l’interaction en utilisant l’axe vertical du diagramme pour représenter le temps, quels messages sont envoyés et quand.<br>
 
-Exemple de diagramme de séquence : système hôtelier<br>
+<h3> Exemple de diagramme de séquence : système hôtelier </h3>
 
-Le diagramme de séquence est un diagramme d’interaction qui détaille comment les opérations sont effectuées – quels messages sont envoyés et quand. Les diagrammes de séquence sont organisés en fonction du temps. Le temps avance au fur et à mesure que vous descendez la page. Les objets impliqués dans l’opération sont listés de gauche à droite selon le moment où ils participent à la séquence de messages.<br>
+<p> Le diagramme de séquence est un diagramme d’interaction qui détaille comment les opérations sont effectuées – quels messages sont envoyés et quand. Les diagrammes de séquence sont organisés en fonction du temps. Le temps avance au fur et à mesure que vous descendez la page. Les objets impliqués dans l’opération sont listés de gauche à droite selon le moment où ils participent à la séquence de messages. </p>
 
 Vous trouverez ci-dessous un diagramme de séquence pour effectuer une réservation d’hôtel. L’objet initiant la séquence de messages est une fenêtre de réservation.<br>
-        <img src="img\3_1DiagSequence.png" alt="Une belle image">
+
+<img src="img\3_1DiagSequence.png" alt="Une belle image">
+
 Notez que : les diagrammes de classes et d’objets sont des vues de modèle statiques. Les diagrammes d’interaction sont dynamiques. Ils décrivent comment les objets collaborent.<br>
 
 Les quatrièmes types de diagramme UML les plus utilisés (96 %) sont : <br>
@@ -133,19 +133,20 @@ Les quatrièmes types de diagramme UML les plus utilisés (96 %) sont : <br>
 </p>
 
     <h2>Diagramme de cas d'utilisation</h2>
-<p id="paragraphe2"> 
 
-Un  diagramme de cas d’utilisation UML  est la principale forme d’exigences système/logiciel pour un nouveau programme logiciel sous-développé. Les cas d’utilisation spécifient le comportement attendu (quoi), et non la méthode exacte pour y parvenir (comment).
+<p> Un  diagramme de cas d’utilisation UML  est la principale forme d’exigences système/logiciel pour un nouveau programme logiciel sous-développé. Les cas d’utilisation spécifient le comportement attendu (quoi), et non la méthode exacte pour y parvenir (comment). </p>
 
-Les cas d’utilisation une fois spécifiés peuvent être désignés à la fois par une représentation textuelle et visuelle (c’est-à-dire un diagramme de cas d’utilisation). Un concept clé de la modélisation des cas d’utilisation est qu’elle nous aide à concevoir un système du point de vue de l’utilisateur final. Il s’agit d’une technique efficace pour communiquer le comportement du système dans les termes de l’utilisateur en spécifiant tous les comportements du système visibles de l’extérieur.
+<p> Les cas d’utilisation une fois spécifiés peuvent être désignés à la fois par une représentation textuelle et visuelle (c’est-à-dire un diagramme de cas d’utilisation). Un concept clé de la modélisation des cas d’utilisation est qu’elle nous aide à concevoir un système du point de vue de l’utilisateur final. Il s’agit d’une technique efficace pour communiquer le comportement du système dans les termes de l’utilisateur en spécifiant tous les comportements du système visibles de l’extérieur. </p>
 
-Diagramme de cas d’utilisation en un coup d’œil
+<h3> Diagramme de cas d’utilisation en un coup d’œil </h3>
 
-Une forme standard de diagramme de cas d’utilisation est définie dans le langage de modélisation unifié, comme indiqué dans l’exemple de diagramme de cas d’utilisation ci-dessous : 
+Une forme standard de diagramme de cas d’utilisation est définie dans le langage de modélisation unifié, comme indiqué dans l’exemple de diagramme de cas d’utilisation ci-dessous :
+
 <img src="img\4_1DiagDUtilisation.png" alt="Une belle image">
+
 Diagramme de cas d’utilisation — Systèmes de vente de véhicules
 
-La figure ci-dessous montre un exemple de diagramme de cas d’utilisation pour un système de véhicule. Comme vous pouvez le voir, même un système aussi grand qu’un système de vente de véhicules ne contient pas plus de 10 cas d’utilisation ! C’est la beauté de la modélisation des cas d’utilisation.
+<p> La figure ci-dessous montre un exemple de diagramme de cas d’utilisation pour un système de véhicule. Comme vous pouvez le voir, même un système aussi grand qu’un système de vente de véhicules ne contient pas plus de 10 cas d’utilisation ! C’est la beauté de la modélisation des cas d’utilisation. </p>
 
 Le modèle de cas d’utilisation montre également l’utilisation de extend et include. En outre, il existe des associations qui relient les acteurs et les cas d’utilisation.
 <img src="img\4_2DiagDUtilisation.png" alt="Une belle image">
@@ -153,24 +154,24 @@ Le modèle de cas d’utilisation montre également l’utilisation de extend et
 
 
     <h2>Diagramme d'état</h2>
-<p id="paragraphe2">
-Le comportement d’une entité n’est pas seulement une conséquence directe de ses entrées, mais il dépend également de son état précédent. L’histoire passée d’une entité peut être modélisée au mieux par un diagramme de machine à états finis ou traditionnellement appelé automates.<br>
 
-Les diagrammes de machine d’état UML  (ou parfois appelés diagramme d’état, machine d’état ou diagramme d’état) montrent les différents états d’une entité. Les diagrammes de machine d’état peuvent également montrer comment une entité répond à divers événements en passant d’un état à un autre. Le diagramme de machine d’état est un diagramme UML utilisé pour modéliser la nature dynamique d’un système.<br>
+<p> Le comportement d’une entité n’est pas seulement une conséquence directe de ses entrées, mais il dépend également de son état précédent. L’histoire passée d’une entité peut être modélisée au mieux par un diagramme de machine à états finis ou traditionnellement appelé automates. </p>
 
-Notation de diagramme de machine d’état simple. <br>
+<p> Les diagrammes de machine d’état UML  (ou parfois appelés diagramme d’état, machine d’état ou diagramme d’état) montrent les différents états d’une entité. Les diagrammes de machine d’état peuvent également montrer comment une entité répond à divers événements en passant d’un état à un autre. Le diagramme de machine d’état est un diagramme UML utilisé pour modéliser la nature dynamique d’un système.</p>
+
+<h3> Notation de diagramme de machine d’état simple. </h3>
 
 <img src="img\5_1DiagDEtat.png" alt="Une belle image">
 
-Un état simple est un état qui n’a pas de sous-structure. Un état qui a des sous-états (états imbriqués) est appelé un état composite. Les sous-états peuvent être imbriqués à n’importe quel niveau. Une machine à états imbriquée peut avoir au plus un état initial et un état final. Les sous-états sont utilisés pour simplifier les machines à états plates complexes en montrant que certains états ne sont possibles que dans un contexte particulier (l’état englobant). <br>
+<p> Un état simple est un état qui n’a pas de sous-structure. Un état qui a des sous-états (états imbriqués) est appelé un état composite. Les sous-états peuvent être imbriqués à n’importe quel niveau. Une machine à états imbriquée peut avoir au plus un état initial et un état final. Les sous-états sont utilisés pour simplifier les machines à états plates complexes en montrant que certains états ne sont possibles que dans un contexte particulier (l’état englobant).</p>
 
-Exemple de sous-état — réchauffeur <br> <br>
+<h3> Exemple de sous-état — réchauffeur </h3>
 
 <img src="img\5_2DiagDEtat.png" alt="Une belle image">
 
 États de l’historique <br>
 
-Sauf indication contraire, lorsqu’une transition entre dans un état composite, l’action de  la machine à états imbriquée recommence à l’état initial  (sauf si la transition cible directement un sous-état). Les états d’historique permettent à la machine d’état de  réintégrer le dernier sous-état qui était actif avant de quitter  l’état composite. Un exemple d’utilisation de l’état de l’historique est présenté dans la figure ci-dessous. <br>
+<p> Sauf indication contraire, lorsqu’une transition entre dans un état composite, l’action de  la machine à états imbriquée recommence à l’état initial  (sauf si la transition cible directement un sous-état). Les états d’historique permettent à la machine d’état de  réintégrer le dernier sous-état qui était actif avant de quitter  l’état composite. Un exemple d’utilisation de l’état de l’historique est présenté dans la figure ci-dessous. </p>
 
 <img src="img\5_3DiagDEtat.png" alt="Une belle image">
 
@@ -180,85 +181,83 @@ L’utilisation du diagramme de communication est de 82 % selon l’enquête :
 
 
     <h2>Diagramme de communication</h2>
-        <p id="paragraphe2">  
 
-Les diagrammes de communication  UML , comme les diagrammes de séquence  - une sorte de diagramme d’interaction, montrent comment les objets interagissent. Un diagramme de communication est une extension du diagramme d’objets qui montre les objets ainsi que les messages qui voyagent de l’un à l’autre. En plus des associations entre objets, le diagramme de communication montre les messages que les objets s’envoient. <br>
+<p>Les diagrammes de communication  UML , comme les diagrammes de séquence  - une sorte de diagramme d’interaction, montrent comment les objets interagissent. Un diagramme de communication est une extension du diagramme d’objets qui montre les objets ainsi que les messages qui voyagent de l’un à l’autre. En plus des associations entre objets, le diagramme de communication montre les messages que les objets s’envoient. </p>
 
-Diagramme de communication en un coup d’œil<br>
+<h3> Diagramme de communication en un coup d’œil </h3>
 
-Dans l’exemple de la notation d’un schéma de communication, les objets (acteurs dans les cas d’utilisation) sont représentés par des rectangles. Dans l’exemple (schéma de communication générique):<br>
+<p> Dans l’exemple de la notation d’un schéma de communication, les objets (acteurs dans les cas d’utilisation) sont représentés par des rectangles. Dans l’exemple (schéma de communication générique): </p>
 
-Les objets sont Objet1, Objet2, Objet…, ObjetN-1 … et ObjetN.<br>
-Les messages transmis entre les objets sont représentés par des flèches étiquetées qui commencent par l’objet émetteur (acteur) et se terminent par l’objet récepteur.<br>
-Les exemples de messages transmis entre les objets sont étiquetés 1 : message1, 2 : message2, 3 : message3, etc., où le préfixe numérique du nom du message indique son ordre dans la séquence.<br>
-L’Objet1 envoie d’abord à l’Objet2 le message message1, l’Objet2 envoie à son tour à l’ObjetN-1 le message message2, et ainsi de suite.<br>
-Les messages que les objets s’envoient à eux-mêmes sont indiqués comme des boucles (par exemple, message message5).<br>
-        <img src="img\6_1DiagCommunication.png" alt="Une belle image">
+<p> Les objets sont Objet1, Objet2, Objet…, ObjetN-1 … et ObjetN.
+Les messages transmis entre les objets sont représentés par des flèches étiquetées qui commencent par l’objet émetteur (acteur) et se terminent par l’objet récepteur.
+Les exemples de messages transmis entre les objets sont étiquetés 1 : message1, 2 : message2, 3 : message3, etc., où le préfixe numérique du nom du message indique son ordre dans la séquence.
+L’Objet1 envoie d’abord à l’Objet2 le message message1, l’Objet2 envoie à son tour à l’ObjetN-1 le message message2, et ainsi de suite.
+Les messages que les objets s’envoient à eux-mêmes sont indiqués comme des boucles (par exemple, message message5). </p>
 
-Diagramme de communication vs diagramme de séquence <br>
+<img src="img\6_1DiagCommunication.png" alt="Une belle image">
 
-Le diagramme de communication et le diagramme de séquence sont similaires. Ils sont sémantiquement équivalents, c’est-à-dire qu’ils présentent les mêmes informations, et vous pouvez transformer une communication en diagramme de séquence et vice versa. La principale distinction entre eux est que le diagramme de communication organise les éléments selon l’espace, le diagramme de séquence selon le temps. <br>
+<h3> Diagramme de communication vs diagramme de séquence </h3>
 
-Des deux types de diagrammes d’interaction, les diagrammes de séquence semblent être beaucoup plus utilisés que les diagrammes de communication. Alors, pourquoi utiliseriez-vous des diagrammes de communication ? Tout d’abord, ils sont très utiles pour visualiser la relation entre des objets collaborant pour effectuer une tâche particulière. Ceci est difficile à déterminer à partir d’un diagramme de séquence. De plus, les diagrammes de communication peuvent également vous aider à déterminer la précision de votre modèle statique (c’est-à-dire les diagrammes de classes). <br>
+<p>Le diagramme de communication et le diagramme de séquence sont similaires. Ils sont sémantiquement équivalents, c’est-à-dire qu’ils présentent les mêmes informations, et vous pouvez transformer une communication en diagramme de séquence et vice versa. La principale distinction entre eux est que le diagramme de communication organise les éléments selon l’espace, le diagramme de séquence selon le temps. </p>
+
+<p> Des deux types de diagrammes d’interaction, les diagrammes de séquence semblent être beaucoup plus utilisés que les diagrammes de communication. Alors, pourquoi utiliseriez-vous des diagrammes de communication ? Tout d’abord, ils sont très utiles pour visualiser la relation entre des objets collaborant pour effectuer une tâche particulière. Ceci est difficile à déterminer à partir d’un diagramme de séquence. De plus, les diagrammes de communication peuvent également vous aider à déterminer la précision de votre modèle statique (c’est-à-dire les diagrammes de classes). </p>
+
     <img src="img\6_2DiagCommunication.png" alt="Une belle image">
 
-    Les utilisations du diagramme de composants et du diagramme de déploiement sont de 80 % :
+<p> Les utilisations du diagramme de composants et du diagramme de déploiement sont de 80 % : </p>
 
+<h2>Diagramme des composants</h2>
 
-        </p>
+<p> Les diagrammes de composants UML  sont utilisés pour modéliser les aspects physiques des systèmes orientés objet qui sont utilisés pour visualiser, spécifier et documenter les systèmes à base de composants, ainsi que pour construire des systèmes exécutables par ingénierie directe et inverse. </p>
 
-    <h2>Diagramme des composants</h2>
-        <p id="paragraphe2"> Les diagrammes de composants UML  sont utilisés pour modéliser les aspects physiques des systèmes orientés objet qui sont utilisés pour visualiser, spécifier et documenter les systèmes à base de composants, ainsi que pour construire des systèmes exécutables par ingénierie directe et inverse.
-
-Les diagrammes de composants sont essentiellement des diagrammes de classes qui se concentrent sur les composants d’un système souvent utilisés pour modéliser la vue d’implémentation statique d’un système.
+<p> Les diagrammes de composants sont essentiellement des diagrammes de classes qui se concentrent sur les composants d’un système souvent utilisés pour modéliser la vue d’implémentation statique d’un système. </p>
 
 Schéma des composants en un coup d’œil
 
-Un diagramme de composants décompose le système réel en cours de développement en différents niveaux de fonctionnalité élevés. Chaque composant est responsable d’un objectif clair dans l’ensemble du système et n’interagit avec d’autres éléments essentiels que sur la base du besoin de savoir.
+<p> Un diagramme de composants décompose le système réel en cours de développement en différents niveaux de fonctionnalité élevés. Chaque composant est responsable d’un objectif clair dans l’ensemble du système et n’interagit avec d’autres éléments essentiels que sur la base du besoin de savoir. </p>
 
         <img src="img\7DiagComposant.png" alt="Une belle image">
 </p>
 
 
     <h2>Diagramme de déploiement</h2>
-        <p id="paragraphe2"> 
 
-Diagramme de déploiement <br><br>
+<p> Un  diagramme de déploiement UML  est un diagramme qui montre la configuration des nœuds de traitement d’exécution et les composants qui y vivent. Les diagrammes de déploiement sont une sorte de diagramme de structure utilisé pour modéliser les aspects physiques d’un système orienté objet. Ils sont souvent utilisés pour modéliser la vue de déploiement statique d’un système (topologie du matériel).</p>
 
-Un  diagramme de déploiement UML  est un diagramme qui montre la configuration des nœuds de traitement d’exécution et les composants qui y vivent. Les diagrammes de déploiement sont une sorte de diagramme de structure utilisé pour modéliser les aspects physiques d’un système orienté objet. Ils sont souvent utilisés pour modéliser la vue de déploiement statique d’un système (topologie du matériel).<br>
+<h3> Schéma de déploiement en un coup d’œil </h3>
 
-Schéma de déploiement en un coup d’œil <br><br>
+<p> Les diagrammes de déploiement sont importants pour visualiser, spécifier et documenter les systèmes embarqués, client/serveur et distribués, ainsi que pour gérer les systèmes exécutables par ingénierie directe et inverse. </p>
 
-Les diagrammes de déploiement sont importants pour visualiser, spécifier et documenter les systèmes embarqués, client/serveur et distribués, ainsi que pour gérer les systèmes exécutables par ingénierie directe et inverse. <br>
-
-Un diagramme de déploiement est juste un type spécial de diagramme de classes, qui se concentre sur les nœuds d’un système. Graphiquement, un diagramme de déploiement est une collection de sommets et d’arcs. Les diagrammes de déploiement contiennent généralement : <br> <br>
+<p> Un diagramme de déploiement est juste un type spécial de diagramme de classes, qui se concentre sur les nœuds d’un système. Graphiquement, un diagramme de déploiement est une collection de sommets et d’arcs. Les diagrammes de déploiement contiennent généralement : </p>
 
 Nœuds <br><br>
 
-La boîte 3-D représente un nœud, logiciel ou matériel <br> <br>
+<p>La boîte 3-D représente un nœud, logiciel ou matériel <br> <br>
 Le nœud HW peut être signifié avec stéréotype <br>
 Les connexions entre les nœuds sont représentées par une ligne, avec un stéréotype facultatif <br>
 Les nœuds peuvent résider dans un nœud <br><br>
-Autres notations <br><br>
+Autres notations </p>
 
 Dépendance<br>
 Relations associatives.<br>
 Peut également contenir des notes et des contraintes.<br>
+
         <img src="img\8DiagDeploiement.png" alt="Une belle image">
 
-L’utilisation du diagramme d’objets UML est de 71 % selon l’enquête : </p>
-        <img src="img\2classeUML.png" alt="Une belle image">
+<p> L’utilisation du diagramme d’objets UML est de 71 % selon l’enquête : </p>
+    
+<h2>Diagramme d’objets</h2>
 
-    <h2>Diagramme d’objets</h2>
-        <p id="paragraphe2"> L’objet est une instance d’un moment particulier de l’exécution, y compris les objets et les valeurs de données. Un diagramme d’objets UML statique   est une instance d’un  diagramme de classes ; il montre un instantané de l’état détaillé d’un système à un moment donné, ainsi un diagramme d’objets englobe les objets et leurs relations à un moment donné.
+<p> L’objet est une instance d’un moment particulier de l’exécution, y compris les objets et les valeurs de données. Un diagramme d’objets UML statique   est une instance d’un  diagramme de classes ; il montre un instantané de l’état détaillé d’un système à un moment donné, ainsi un diagramme d’objets englobe les objets et leurs relations à un moment donné. </p>
 
-Diagramme d’objets en un coup d’œil
+<h3> Diagramme d’objets en un coup d’œil </h3>
 
-Un diagramme d’objets montre cette relation entre les classes instanciées et la classe définie, et la relation entre ces objets dans le système. Ils sont utiles pour expliquer de plus petites parties de votre système, lorsque votre diagramme de classes système est très complexe, et aussi parfois pour modéliser des relations récursives dans le diagramme.
+<p> Un diagramme d’objets montre cette relation entre les classes instanciées et la classe définie, et la relation entre ces objets dans le système. Ils sont utiles pour expliquer de plus petites parties de votre système, lorsque votre diagramme de classes système est très complexe, et aussi parfois pour modéliser des relations récursives dans le diagramme. </p>
 
-La meilleure façon d’illustrer à quoi ressemble un diagramme d’objets est de montrer le diagramme d’objets dérivé du diagramme de classes correspondant.
+<p> La meilleure façon d’illustrer à quoi ressemble un diagramme d’objets est de montrer le diagramme d’objets dérivé du diagramme de classes correspondant. </p>
 
-Le système de gestion des commandes suivant montre leurs relations. Ce petit diagramme de classes montre qu’un département universitaire peut contenir de nombreux autres départements et le diagramme d’objets ci-dessous instancie le diagramme de classes en le remplaçant par un exemple concret.
+<p> Le système de gestion des commandes suivant montre leurs relations. Ce petit diagramme de classes montre qu’un département universitaire peut contenir de nombreux autres départements et le diagramme d’objets ci-dessous instancie le diagramme de classes en le remplaçant par un exemple concret. </p>
+
 <img src="img\9_1DiagObjet.png" alt="Une belle image">
 
 
@@ -269,25 +268,54 @@ Exemple de diagramme de classe à objet — Système de commande
 L’utilisation du diagramme de package est de 70 % </p>
 
     <h2>Diagramme de structure composite</h2>
-        <p id="paragraphe2"> Le diagramme de structure composite est l’un des nouveaux artefacts ajoutés à UML 2.0. Un diagramme de structure composite est un diagramme structurel UML qui contient des classes, des interfaces, des packages et leurs relations, et qui fournit une vue logique de tout ou partie d’un système logiciel. Il montre la structure interne (y compris les parties et les connecteurs) d’un classifieur structuré ou d’une collaboration.
 
-Un diagramme de structure composite joue un rôle similaire à un diagramme de classes, mais vous permet d’aller plus en détail en décrivant la structure interne de plusieurs classes et en montrant les interactions entre elles. Vous pouvez représenter graphiquement les classes internes et les parties et afficher les associations entre et au sein des classes.
+<p> Le diagramme de structure composite est l’un des nouveaux artefacts ajoutés à UML 2.0. Un diagramme de structure composite est un diagramme structurel UML qui contient des classes, des interfaces, des packages et leurs relations, et qui fournit une vue logique de tout ou partie d’un système logiciel. Il montre la structure interne (y compris les parties et les connecteurs) d’un classifieur structuré ou d’une collaboration. </p>
 
-Schéma de structure composite en un coup d’œil
+<p> Un diagramme de structure composite joue un rôle similaire à un diagramme de classes, mais vous permet d’aller plus en détail en décrivant la structure interne de plusieurs classes et en montrant les interactions entre elles. Vous pouvez représenter graphiquement les classes internes et les parties et afficher les associations entre et au sein des classes.
+</p>
 
-Les diagrammes de structure composite montrent les parties internes d’une classe.
+<h3> Schéma de structure composite en un coup d’œil </h3>
+
+<p> Les diagrammes de structure composite montrent les parties internes d’une classe.
 Les pièces sont nommées : partName:partType[multiplicité]
-Les classes agrégées sont des parties d’une classe mais les parties ne sont pas nécessairement des classes, une partie est tout élément utilisé pour constituer la classe contenante.
-        <img src="img\10DiagSComposite.png" alt="Une belle image">
-Le diagramme de synchronisation n’a qu’une utilisation de 40 % et est rarement utilisé par les utilisateurs moyens</p>
+Les classes agrégées sont des parties d’une classe mais les parties ne sont pas nécessairement des classes, une partie est tout élément utilisé pour constituer la classe contenante. </p>
+
+<img src="img\10DiagSComposite.png" alt="Une belle image">
+
+<p> Le diagramme de synchronisation n’a qu’une utilisation de 40 % et est rarement utilisé par les utilisateurs moyens</p>
 
     <h2>Diagramme de de présentation interactif</h2>
-        <p id="paragraphe2"> Diagramme  de présentation interactif</p>
-        <img src="img\.png" alt="Une belle image">
 
+<p> Les diagrammes de présentation d’interaction UML fournissent un haut niveau d’abstraction d’un modèle d’interaction. C’est une variante du diagramme d’activité où les nœuds sont les interactions ou les occurrences d’interaction. </p>
+
+<p> Le diagramme de vue d’ensemble des interactions se concentre sur la vue d’ensemble du flux de contrôle des interactions qui peut également montrer le flux d’activité entre les diagrammes. En d’autres termes, vous pouvez lier les diagrammes « réels » et atteindre un degré élevé de navigabilité entre les diagrammes à l’intérieur d’un diagramme de vue d’ensemble des interactions. </p>
+
+<h3> Diagramme de présentation des interactions en un coup d’œil </h3>
+
+<p> Le diagramme de présentation d’interaction est l’un des quatorze types de diagrammes du langage de modélisation unifié (UML), qui peut représenter un flux de contrôle avec des nœuds pouvant contenir des diagrammes d’interaction qui montrent comment un ensemble de fragments peut être initié dans divers scénarios. Les diagrammes de vue d’ensemble des interactions se concentrent sur la vue d’ensemble du flux de contrôle où les nœuds sont  les interactions  (sd) ou  l’utilisation de l’interaction  (ref). </p>
+
+<p> Les autres éléments de notation pour les diagrammes de vue d’ensemble des interactions sont les mêmes que pour les diagrammes d’activité et de séquence. Ceux-ci incluent les nœuds initiaux, finaux, de décision, de fusion, de bifurcation et de jointure. </p>
+
+<img src="img\11_DiagPres.png" alt="Une belle image">
+
+<p> Le diagramme UML le moins utilisé est le diagramme de profil, il n’a obtenu que 11 % : </p>
+
+</p>
          <h2>Diagramme de profil</h2>
-        <p id="paragraphe2"> Diagramme  de profil </p>
-        <img src="img\.png" alt="Une belle image">
+
+<p> En tant que langage de modélisation à usage général, UML fournit une base stable pour une grande variété d’exigences. Il n’est pas défini pour des domaines d’application spécifiques ou pour une technologie spécifique. Cependant, dans certaines circonstances, UML est trop général et son utilisation demande beaucoup d’efforts. Dans de tels cas, l’utilisation d’un langage optimisé pour le domaine donné et donc proposant des concepts particuliers est avantageuse.</p>
+
+<p> Le diagramme de profil, une sorte de diagramme structurel dans le langage de modélisation unifié (UML), fournit un mécanisme d’extension générique pour personnaliser les modèles UML pour des domaines et des plates-formes particuliers. Les mécanismes d’extension permettent d’affiner la sémantique standard de manière strictement additive, en évitant qu’elle ne contredise la sémantique standard. Les profils sont définis à l’aide de  stéréotypes , de  définitions de valeurs balisées et de  contraintes  appliquées à des éléments de modèle spécifiques, tels que les classes, les attributs, les opérations et les activités. Un profil est un ensemble d’extensions de ce type qui personnalisent collectivement UML pour un domaine particulier (par exemple, l’aérospatiale, la santé, la finance) ou une plate-forme (J2EE, .NET). </p>
+
+<h3> Exemple de diagramme de profil — Gestion informatique </h3>
+
+<p> Un profil est appliqué à un autre package afin de rendre les stéréotypes du profil disponibles pour ce package. L’illustration ci-dessous montre les profils Réseau, Télécommunications et Logiciel appliqués au package ITManagement. 
+</p>
+
+        <img src="img\12_DiagProfil.png" alt="Une belle image">
+
+        </p>
+
 
     </div>
 

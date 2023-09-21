@@ -7,6 +7,10 @@ body, h1, h2, p {
     padding: 0;
 }
 
+h3 {
+    font-style: bold;
+}
+
 /* Style de base pour le corps du document */
 body {
     font-family: Arial, sans-serif;
@@ -61,8 +65,8 @@ nav a:hover {
 }
 
 img {
-  width: 200px; /* Définir une largeur fixe */
-  height: 150px; /* Définir une hauteur fixe */
+  width: 400px; /* Définir une largeur fixe */
+  height: 300px; /* Définir une hauteur fixe */
 }
 
 /* Style du conteneur principal */
