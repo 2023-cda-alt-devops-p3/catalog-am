@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Diagrammes UML</title>
-     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="java.js"></script>
 </head>
 <body>
     <header>
@@ -15,47 +16,104 @@
         <a href="DiagrammeMERISE.html">Diagramme MERISE</a>
         <a>Diagrammes :</a>
         <select id="Diagrammes">
-            <option value="Diagrammes1">de classe</option>
-            <option value="Diagrammes2">Diagramme 2</option>
-            <option value="Diagrammes3">Diagramme 3</option>
-            <option value="Diagrammes3">Diagramme 4</option>
-            <option value="Diagrammes3">Diagramme 5</option>
-            <option value="Diagrammes3">Diagramme 6</option>
-            <option value="Diagrammes3">Diagramme 7</option>
-            <option value="Diagrammes3">Diagramme 8</option>
-            <option value="Diagrammes3">Diagramme 9</option>
-            <option value="Diagrammes3">Diagramme 10</option>
-            <option value="Diagrammes3">Diagramme 11</option>
-            <option value="Diagrammes3">Diagramme 12</option>
-            <option value="Diagrammes3">Diagramme 13</option>
-            <option value="Diagrammes3">Diagramme 14</option>
+            <option value="paragraphe1">de classe</option>
+            <option value="paragraphe2">d'activité</option>
+            <option value="Diagrammes3">séquençage</option>
+            <option value="Diagrammes4">de cas d'utilisation</option>
+            <option value="Diagrammes5">de déploiement</option>
+            <option value="Diagrammes6">d'état</option>
+            <option value="Diagrammes7">de machine d’état UML </option>
+            <option value="Diagrammes8">de machine d’état simple</option>
+            <option value="Diagrammes9">de l’historique</option>
+            <option value="Diagrammes10">de communication</option>
+            <option value="Diagrammes11">des composants</option>
+            <option value="Diagrammes12">de déploiement</option>
+            <option value="Diagrammes13">d’objets</option>
+            <option value="Diagrammes14">de structure composite</option> -->
         </select>
 </ul>
     </nav>
     <div class="container">
 
         <h2>Diagramme de classe UML (Unified Modeling Language)</h2>
-<p>En génie logiciel, un diagramme de classes dans le  langage de modélisation unifié (UML)  est  un type de diagramme de structure statique  qui décrit la structure d’un système en montrant les classes du système, leurs attributs, opérations (ou méthodes) et les relations entre les objets.
+<p id="paragraphe1">
+
+En génie logiciel, un diagramme de classes dans le  langage de modélisation unifié (UML)  est  un type de diagramme de structure statique  qui décrit la structure d’un système en montrant les classes du système, leurs attributs, opérations (ou méthodes) et les relations entre les objets.
 
 Objectif des diagrammes de classes
 
-Affiche la structure statique des classificateurs dans un système
-Le diagramme fournit une notation de base pour les autres diagrammes de structure prescrits par UML
-Utile également pour les développeurs et les autres membres de l’équipe
-Les analystes métier peuvent utiliser des diagrammes de classes pour modéliser des systèmes d’un point de vue métier
+1. Affiche la structure statique des classificateurs dans un système
+2. Le diagramme fournit une notation de base pour les autres diagrammes de structure prescrits par UML
+3. Utile également pour les développeurs et les autres membres de l’équipe
+4. Les analystes métier peuvent utiliser des diagrammes de classes pour modéliser des systèmes d’un point de vue métier
+
 Un diagramme de classes UML est composé de :
 
-Un ensemble de classes et
-Un ensemble de relations entre les classes
+&rarr; Un ensemble de classes 
+&rarr; Un ensemble de relations entre les classes
 
-Diagramme de classes – Exemple d’outil de diagramme
+<h3> Diagramme de classes – Exemple d’outil de diagramme </h3> 
+
+Un diagramme de classes peut également avoir des notes attachées aux classes ou aux relations. Les notes sont affichées en gris.
                 <img src="img\1classeUML.png" alt="Une belle image">
-Un diagramme de classes peut également avoir des notes attachées aux classes ou aux relations. Les notes sont affichées en gris.</p>
+<br> Dans l’exemple ci-dessus :
+
+Nous pouvons interpréter la signification du diagramme de classes ci-dessus en lisant les points comme suit. <br>
+
+1. Shape est une classe abstraite. Il est indiqué en italique. <br>
+2. La forme est une super-classe. Cercle, Rectangle et Polygone sont dérivés de Forme. En d’autres termes, un cercle est une forme. Il s’agit d’une relation généralisation/héritage. <br>
+3. Il existe une association entre DialogBox et DataController. <br>
+4. La forme fait partie de Window. Il s’agit d’une relation d’agrégation. La forme peut exister sans fenêtre. <br>
+5. Point fait partie de Circle. Il s’agit d’une relation de composition. Point ne peut pas exister sans cercle. <br>
+6. La fenêtre dépend de l’événement. Cependant, Event ne dépend pas de Window. <br>
+7. Les attributs du cercle sont le rayon et le centre. Il s’agit d’une classe d’entités. <br>
+8. Les noms de méthode de Circle sont area(), circum(), setCenter() et setRadius(). <br>
+9. Le paramètre radius dans Circle est un paramètre in de type float. <br>
+10. La méthode area() de la classe Circle renvoie une valeur de type double. <br>
+11. Les attributs et les noms de méthodes de Rectangle sont masqués. Certaines autres classes du diagramme ont également leurs attributs et leurs noms de méthode masqués. <br>
+Le deuxième type de diagramme le plus populaire dans UML est le diagramme d’activité :
+</p>
+
+    <h2>Diagramme d'activité</h2>
+        <p id="paragraphe2"> Diagramme de séquençage </p>
+        <img src="img\2classeUML.png" alt="Une belle image">
+
+    <h2>Diagramme de cas d'utilisation</h2>
+        <p id="paragraphe2"> Diagramme de cas d'utilisation </p>
+        <img src="img\2classeUML.png" alt="Une belle image">
+
+    <h2>Diagramme d'état</h2>
+        <p id="paragraphe2"> Diagramme d'état </p>
+        <img src="img\3classeUML.png" alt="Une belle image">
+
+    <h2>Diagramme de communication</h2>
+        <p id="paragraphe2"> Diagramme de communication</p>
+        <img src="img\4classeUML.png" alt="Une belle image">
+
+    <h2>Diagramme des composants</h2>
+        <p id="paragraphe2"> Diagramme des composants </p>
+        <img src="img\2classeUML.png" alt="Une belle image">
+
+    <h2>Diagramme d'activité</h2>
+        <p id="paragraphe2"> Diagramme d’activité — Apprendre par des exemples </p>
+        <img src="img\2classeUML.png" alt="Une belle image">
+
+    <h2>Diagramme d’objets</h2>
+        <p id="paragraphe2"> Diagramme d’objets</p>
+        <img src="img\2classeUML.png" alt="Une belle image">
+
+    <h2>Diagramme de structure composite</h2>
+        <p id="paragraphe2"> Diagramme  de présentation interactif</p>
+        <img src="img\2classeUML.png" alt="Une belle image">
+
+    <h2>Diagramme de structure composite</h2>
+        <p id="paragraphe2"> Diagramme  de présentation interactif</p>
+        <img src="img\2classeUML.png" alt="Une belle image">
+
     </div>
 
         <footer>
         <p>Copyright &copy; 2023 Site Web pour Simplon, de Ali MOUSSAEV. Tous droits réservés.</p>
     </footer>
-      <script src="javascript\monjs.js"></script>
 </body>
 </html>
