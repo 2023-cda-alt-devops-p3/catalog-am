@@ -74,7 +74,7 @@ Nous pouvons interpréter la signification du diagramme de classes ci-dessus en 
 Le deuxième type de diagramme le plus populaire dans UML est le diagramme d’activité :
 </p>
 
-    <h2> Diagramme séquençage </h2>
+    <h2> Diagramme d'activité </h2>
         <p id="paragraphe2"> 
 
 Le diagramme d’activité est un autre diagramme de comportement important dans le diagramme  UML  pour décrire les aspects dynamiques du système. Le diagramme d’activité est essentiellement une version avancée de l’organigramme qui modélise le flux d’une activité à une autre activité. <br>
@@ -113,7 +113,7 @@ L’exemple de diagramme d’activité ci-dessous visualise le flux sous forme g
  </p>
         <img src="img\2classeUML.png" alt="Une belle image">
 
-    <h2>Diagramme de cas d'utilisation</h2>
+    <h2>Diagramme de séquençage</h2>
         <p id="paragraphe2"> 
 
 Les diagrammes de séquence UML  sont des diagrammes d’interaction qui détaillent la façon dont les opérations sont effectuées. Ils capturent l’interaction entre les objets dans le cadre d’une collaboration. Les diagrammes de séquence sont centrés sur le temps et ils montrent visuellement l’ordre de l’interaction en utilisant l’axe vertical du diagramme pour représenter le temps, quels messages sont envoyés et quand.<br>
@@ -132,20 +132,91 @@ Les quatrièmes types de diagramme UML les plus utilisés (96 %) sont : <br>
 &rarr; diagramme de machine d’état<br>
 </p>
 
+    <h2>Diagramme de cas d'utilisation</h2>
+<p id="paragraphe2"> 
+
+Un  diagramme de cas d’utilisation UML  est la principale forme d’exigences système/logiciel pour un nouveau programme logiciel sous-développé. Les cas d’utilisation spécifient le comportement attendu (quoi), et non la méthode exacte pour y parvenir (comment).
+
+Les cas d’utilisation une fois spécifiés peuvent être désignés à la fois par une représentation textuelle et visuelle (c’est-à-dire un diagramme de cas d’utilisation). Un concept clé de la modélisation des cas d’utilisation est qu’elle nous aide à concevoir un système du point de vue de l’utilisateur final. Il s’agit d’une technique efficace pour communiquer le comportement du système dans les termes de l’utilisateur en spécifiant tous les comportements du système visibles de l’extérieur.
+
+Diagramme de cas d’utilisation en un coup d’œil
+
+Une forme standard de diagramme de cas d’utilisation est définie dans le langage de modélisation unifié, comme indiqué dans l’exemple de diagramme de cas d’utilisation ci-dessous : 
+<img src="img\4_1DiagDUtilisation.png" alt="Une belle image">
+Diagramme de cas d’utilisation — Systèmes de vente de véhicules
+
+La figure ci-dessous montre un exemple de diagramme de cas d’utilisation pour un système de véhicule. Comme vous pouvez le voir, même un système aussi grand qu’un système de vente de véhicules ne contient pas plus de 10 cas d’utilisation ! C’est la beauté de la modélisation des cas d’utilisation.
+
+Le modèle de cas d’utilisation montre également l’utilisation de extend et include. En outre, il existe des associations qui relient les acteurs et les cas d’utilisation.
+<img src="img\4_2DiagDUtilisation.png" alt="Une belle image">
+</p>
+
+
     <h2>Diagramme d'état</h2>
-        <p id="paragraphe2"> Diagramme d'état </p>
-        <img src="img\3classeUML.png" alt="Une belle image">
+<p id="paragraphe2">
+Le comportement d’une entité n’est pas seulement une conséquence directe de ses entrées, mais il dépend également de son état précédent. L’histoire passée d’une entité peut être modélisée au mieux par un diagramme de machine à états finis ou traditionnellement appelé automates.<br>
+
+Les diagrammes de machine d’état UML  (ou parfois appelés diagramme d’état, machine d’état ou diagramme d’état) montrent les différents états d’une entité. Les diagrammes de machine d’état peuvent également montrer comment une entité répond à divers événements en passant d’un état à un autre. Le diagramme de machine d’état est un diagramme UML utilisé pour modéliser la nature dynamique d’un système.<br>
+
+Notation de diagramme de machine d’état simple. <br>
+
+<img src="img\5_1DiagDEtat.png" alt="Une belle image">
+
+Un état simple est un état qui n’a pas de sous-structure. Un état qui a des sous-états (états imbriqués) est appelé un état composite. Les sous-états peuvent être imbriqués à n’importe quel niveau. Une machine à états imbriquée peut avoir au plus un état initial et un état final. Les sous-états sont utilisés pour simplifier les machines à états plates complexes en montrant que certains états ne sont possibles que dans un contexte particulier (l’état englobant). <br>
+
+Exemple de sous-état — réchauffeur <br> <br>
+
+<img src="img\5_2DiagDEtat.png" alt="Une belle image">
+
+États de l’historique <br>
+
+Sauf indication contraire, lorsqu’une transition entre dans un état composite, l’action de  la machine à états imbriquée recommence à l’état initial  (sauf si la transition cible directement un sous-état). Les états d’historique permettent à la machine d’état de  réintégrer le dernier sous-état qui était actif avant de quitter  l’état composite. Un exemple d’utilisation de l’état de l’historique est présenté dans la figure ci-dessous. <br>
+
+<img src="img\5_3DiagDEtat.png" alt="Une belle image">
+
+L’utilisation du diagramme de communication est de 82 % selon l’enquête :
+
+</p>
+
 
     <h2>Diagramme de communication</h2>
-        <p id="paragraphe2"> Diagramme de communication</p>
-        <img src="img\4classeUML.png" alt="Une belle image">
+        <p id="paragraphe2">
+
+
+
+        </p>
 
     <h2>Diagramme des composants</h2>
         <p id="paragraphe2"> Diagramme des composants </p>
         <img src="img\2classeUML.png" alt="Une belle image">
 
     <h2>Diagramme de déploiement</h2>
-        <p id="paragraphe2"> Diagramme de déploiement — Apprendre par des exemples </p>
+        <p id="paragraphe2"> 
+
+Diagramme de déploiement <br><br>
+
+Un  diagramme de déploiement UML  est un diagramme qui montre la configuration des nœuds de traitement d’exécution et les composants qui y vivent. Les diagrammes de déploiement sont une sorte de diagramme de structure utilisé pour modéliser les aspects physiques d’un système orienté objet. Ils sont souvent utilisés pour modéliser la vue de déploiement statique d’un système (topologie du matériel).<br>
+
+Schéma de déploiement en un coup d’œil <br><br>
+
+Les diagrammes de déploiement sont importants pour visualiser, spécifier et documenter les systèmes embarqués, client/serveur et distribués, ainsi que pour gérer les systèmes exécutables par ingénierie directe et inverse. <br>
+
+Un diagramme de déploiement est juste un type spécial de diagramme de classes, qui se concentre sur les nœuds d’un système. Graphiquement, un diagramme de déploiement est une collection de sommets et d’arcs. Les diagrammes de déploiement contiennent généralement : <br> <br>
+
+Nœuds <br><br>
+
+La boîte 3-D représente un nœud, logiciel ou matériel <br>
+Le nœud HW peut être signifié avec stéréotype <br>
+Les connexions entre les nœuds sont représentées par une ligne, avec un stéréotype facultatif <br>
+Les nœuds peuvent résider dans un nœud <br><br>
+Autres notations <br><br>
+
+Dépendance<br>
+Relations associatives.<br>
+Peut également contenir des notes et des contraintes.<br>
+        <img src="img\6_2DiagCommunication.png" alt="Une belle image">
+
+L’utilisation du diagramme d’objets UML est de 71 % selon l’enquête : </p>
         <img src="img\2classeUML.png" alt="Une belle image">
 
     <h2>Diagramme d’objets</h2>

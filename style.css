@@ -60,6 +60,11 @@ nav a:hover {
     text-decoration: underline;
 }
 
+img {
+  width: 200px; /* Définir une largeur fixe */
+  height: 150px; /* Définir une hauteur fixe */
+}
+
 /* Style du conteneur principal */
 /*.container {
     max-width: 1000px;
