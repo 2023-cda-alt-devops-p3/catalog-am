@@ -81,7 +81,7 @@ Le diagramme d’activité est un autre diagramme de comportement important dans
 
 Quand utiliser le diagramme d’activité <br><br>
 
-Les diagrammes d’activité décrivent comment les activités sont coordonnées pour fournir un service qui peut se situer à différents niveaux d’abstraction. En règle générale, un événement doit être réalisé par certaines opérations, en particulier lorsque l’opération est destinée à réaliser un certain nombre de choses différentes qui nécessitent une coordination, ou comment les événements dans un cas d’utilisation unique sont liés les uns aux autres, en particulier, les cas d’utilisation où les activités peuvent se chevaucher et nécessiter une coordination. Il convient également à la modélisation de la manière dont une collection de cas d’utilisation se coordonne pour représenter les flux de travail métier
+Les diagrammes d’activité décrivent comment les activités sont coordonnées pour fournir un service qui peut se situer à différents niveaux d’abstraction. En règle générale, un événement doit être réalisé par certaines opérations, en particulier lorsque l’opération est destinée à réaliser un certain nombre de choses différentes qui nécessitent une coordination, ou comment les événements dans un cas d’utilisation unique sont liés les uns aux autres, en particulier, les cas d’utilisation où les activités peuvent se chevaucher et nécessiter une coordination. Il convient également à la modélisation de la manière dont une collection de cas d’utilisation se coordonne pour représenter les flux de travail métier.<br>
 
 1.Identifier les cas d’utilisation candidats, grâce à l’examen des flux de travail de l’entreprise<br>
 2.Identifier les conditions préalables et postérieures (le contexte) pour les cas d’utilisation<br>
@@ -90,12 +90,47 @@ Les diagrammes d’activité décrivent comment les activités sont coordonnées
 5.Modélisez en détail des activités complexes dans un diagramme d’activité de haut niveau<br>
 6.Diagramme d’activité — Apprendre par des exemples<br>
 
-Un diagramme d’activité de base – un organigramme comme </p>
+Diagramme d’activité — Apprendre par des exemples
+
+Un diagramme d’activité de base – un organigramme comme :
+<img src="img\2_1DiagActivite.png" alt="Une belle image">
+
+Exemple de diagramme d’activité — Ordre de processus
+
+Compte tenu de la description du problème lié au workflow de traitement d’une commande, modélisons la description en représentation visuelle à l’aide d’un diagramme d’activité :<br>
+
+Ordre de traitement — Description du problème<br>
+
+Une fois la commande reçue, les activités se divisent en deux ensembles parallèles d’activités. Un côté remplit et envoie la commande tandis que l’autre s’occupe de la facturation.<br>
+
+Du côté de l’exécution de la commande, la méthode de livraison est décidée conditionnellement. Selon la condition, l’activité de livraison de nuit ou l’activité de livraison régulière est effectuée.<br>
+
+Enfin, les activités parallèles se combinent pour clôturer la commande.<br><br>
+
+L’exemple de diagramme d’activité ci-dessous visualise le flux sous forme graphique.<br>
+<img src="img\2_2DiagActivite.png" alt="Une belle image">
+
+ </p>
         <img src="img\2classeUML.png" alt="Une belle image">
 
     <h2>Diagramme de cas d'utilisation</h2>
-        <p id="paragraphe2"> Diagramme de cas d'utilisation </p>
-        <img src="img\2classeUML.png" alt="Une belle image">
+        <p id="paragraphe2"> 
+
+Les diagrammes de séquence UML  sont des diagrammes d’interaction qui détaillent la façon dont les opérations sont effectuées. Ils capturent l’interaction entre les objets dans le cadre d’une collaboration. Les diagrammes de séquence sont centrés sur le temps et ils montrent visuellement l’ordre de l’interaction en utilisant l’axe vertical du diagramme pour représenter le temps, quels messages sont envoyés et quand.<br>
+
+Exemple de diagramme de séquence : système hôtelier<br>
+
+Le diagramme de séquence est un diagramme d’interaction qui détaille comment les opérations sont effectuées – quels messages sont envoyés et quand. Les diagrammes de séquence sont organisés en fonction du temps. Le temps avance au fur et à mesure que vous descendez la page. Les objets impliqués dans l’opération sont listés de gauche à droite selon le moment où ils participent à la séquence de messages.<br>
+
+Vous trouverez ci-dessous un diagramme de séquence pour effectuer une réservation d’hôtel. L’objet initiant la séquence de messages est une fenêtre de réservation.<br>
+        <img src="img\3_1DiagSequence.png" alt="Une belle image">
+Notez que : les diagrammes de classes et d’objets sont des vues de modèle statiques. Les diagrammes d’interaction sont dynamiques. Ils décrivent comment les objets collaborent.<br>
+
+Les quatrièmes types de diagramme UML les plus utilisés (96 %) sont : <br>
+
+&rarr; diagramme de cas d’utilisation<br>
+&rarr; diagramme de machine d’état<br>
+</p>
 
     <h2>Diagramme d'état</h2>
         <p id="paragraphe2"> Diagramme d'état </p>
