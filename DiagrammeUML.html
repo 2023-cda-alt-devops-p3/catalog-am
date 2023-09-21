@@ -180,15 +180,45 @@ L’utilisation du diagramme de communication est de 82 % selon l’enquête :
 
 
     <h2>Diagramme de communication</h2>
-        <p id="paragraphe2">
+        <p id="paragraphe2">  
 
+Les diagrammes de communication  UML , comme les diagrammes de séquence  - une sorte de diagramme d’interaction, montrent comment les objets interagissent. Un diagramme de communication est une extension du diagramme d’objets qui montre les objets ainsi que les messages qui voyagent de l’un à l’autre. En plus des associations entre objets, le diagramme de communication montre les messages que les objets s’envoient. <br>
+
+Diagramme de communication en un coup d’œil<br>
+
+Dans l’exemple de la notation d’un schéma de communication, les objets (acteurs dans les cas d’utilisation) sont représentés par des rectangles. Dans l’exemple (schéma de communication générique):<br>
+
+Les objets sont Objet1, Objet2, Objet…, ObjetN-1 … et ObjetN.<br>
+Les messages transmis entre les objets sont représentés par des flèches étiquetées qui commencent par l’objet émetteur (acteur) et se terminent par l’objet récepteur.<br>
+Les exemples de messages transmis entre les objets sont étiquetés 1 : message1, 2 : message2, 3 : message3, etc., où le préfixe numérique du nom du message indique son ordre dans la séquence.<br>
+L’Objet1 envoie d’abord à l’Objet2 le message message1, l’Objet2 envoie à son tour à l’ObjetN-1 le message message2, et ainsi de suite.<br>
+Les messages que les objets s’envoient à eux-mêmes sont indiqués comme des boucles (par exemple, message message5).<br>
+        <img src="img\6_1DiagCommunication.png" alt="Une belle image">
+
+Diagramme de communication vs diagramme de séquence <br>
+
+Le diagramme de communication et le diagramme de séquence sont similaires. Ils sont sémantiquement équivalents, c’est-à-dire qu’ils présentent les mêmes informations, et vous pouvez transformer une communication en diagramme de séquence et vice versa. La principale distinction entre eux est que le diagramme de communication organise les éléments selon l’espace, le diagramme de séquence selon le temps. <br>
+
+Des deux types de diagrammes d’interaction, les diagrammes de séquence semblent être beaucoup plus utilisés que les diagrammes de communication. Alors, pourquoi utiliseriez-vous des diagrammes de communication ? Tout d’abord, ils sont très utiles pour visualiser la relation entre des objets collaborant pour effectuer une tâche particulière. Ceci est difficile à déterminer à partir d’un diagramme de séquence. De plus, les diagrammes de communication peuvent également vous aider à déterminer la précision de votre modèle statique (c’est-à-dire les diagrammes de classes). <br>
+    <img src="img\6_2DiagCommunication.png" alt="Une belle image">
+
+    Les utilisations du diagramme de composants et du diagramme de déploiement sont de 80 % :
 
 
         </p>
 
     <h2>Diagramme des composants</h2>
-        <p id="paragraphe2"> Diagramme des composants </p>
-        <img src="img\2classeUML.png" alt="Une belle image">
+        <p id="paragraphe2"> Les diagrammes de composants UML  sont utilisés pour modéliser les aspects physiques des systèmes orientés objet qui sont utilisés pour visualiser, spécifier et documenter les systèmes à base de composants, ainsi que pour construire des systèmes exécutables par ingénierie directe et inverse.
+
+Les diagrammes de composants sont essentiellement des diagrammes de classes qui se concentrent sur les composants d’un système souvent utilisés pour modéliser la vue d’implémentation statique d’un système.
+
+Schéma des composants en un coup d’œil
+
+Un diagramme de composants décompose le système réel en cours de développement en différents niveaux de fonctionnalité élevés. Chaque composant est responsable d’un objectif clair dans l’ensemble du système et n’interagit avec d’autres éléments essentiels que sur la base du besoin de savoir.
+
+        <img src="img\7DiagComposant.png" alt="Une belle image">
+</p>
+
 
     <h2>Diagramme de déploiement</h2>
         <p id="paragraphe2"> 
@@ -205,7 +235,7 @@ Un diagramme de déploiement est juste un type spécial de diagramme de classes,
 
 Nœuds <br><br>
 
-La boîte 3-D représente un nœud, logiciel ou matériel <br>
+La boîte 3-D représente un nœud, logiciel ou matériel <br> <br>
 Le nœud HW peut être signifié avec stéréotype <br>
 Les connexions entre les nœuds sont représentées par une ligne, avec un stéréotype facultatif <br>
 Les nœuds peuvent résider dans un nœud <br><br>
@@ -214,26 +244,50 @@ Autres notations <br><br>
 Dépendance<br>
 Relations associatives.<br>
 Peut également contenir des notes et des contraintes.<br>
-        <img src="img\6_2DiagCommunication.png" alt="Une belle image">
+        <img src="img\8DiagDeploiement.png" alt="Une belle image">
 
 L’utilisation du diagramme d’objets UML est de 71 % selon l’enquête : </p>
         <img src="img\2classeUML.png" alt="Une belle image">
 
     <h2>Diagramme d’objets</h2>
-        <p id="paragraphe2"> Diagramme d’objets</p>
-        <img src="img\2classeUML.png" alt="Une belle image">
+        <p id="paragraphe2"> L’objet est une instance d’un moment particulier de l’exécution, y compris les objets et les valeurs de données. Un diagramme d’objets UML statique   est une instance d’un  diagramme de classes ; il montre un instantané de l’état détaillé d’un système à un moment donné, ainsi un diagramme d’objets englobe les objets et leurs relations à un moment donné.
+
+Diagramme d’objets en un coup d’œil
+
+Un diagramme d’objets montre cette relation entre les classes instanciées et la classe définie, et la relation entre ces objets dans le système. Ils sont utiles pour expliquer de plus petites parties de votre système, lorsque votre diagramme de classes système est très complexe, et aussi parfois pour modéliser des relations récursives dans le diagramme.
+
+La meilleure façon d’illustrer à quoi ressemble un diagramme d’objets est de montrer le diagramme d’objets dérivé du diagramme de classes correspondant.
+
+Le système de gestion des commandes suivant montre leurs relations. Ce petit diagramme de classes montre qu’un département universitaire peut contenir de nombreux autres départements et le diagramme d’objets ci-dessous instancie le diagramme de classes en le remplaçant par un exemple concret.
+<img src="img\9_1DiagObjet.png" alt="Une belle image">
+
+
+
+Exemple de diagramme de classe à objet — Système de commande
+<img src="img\9_2DiagObjet.png" alt="Une belle image">
+
+L’utilisation du diagramme de package est de 70 % </p>
 
     <h2>Diagramme de structure composite</h2>
-        <p id="paragraphe2"> Diagramme  de structure composite</p>
-        <img src="img\2classeUML.png" alt="Une belle image">
+        <p id="paragraphe2"> Le diagramme de structure composite est l’un des nouveaux artefacts ajoutés à UML 2.0. Un diagramme de structure composite est un diagramme structurel UML qui contient des classes, des interfaces, des packages et leurs relations, et qui fournit une vue logique de tout ou partie d’un système logiciel. Il montre la structure interne (y compris les parties et les connecteurs) d’un classifieur structuré ou d’une collaboration.
+
+Un diagramme de structure composite joue un rôle similaire à un diagramme de classes, mais vous permet d’aller plus en détail en décrivant la structure interne de plusieurs classes et en montrant les interactions entre elles. Vous pouvez représenter graphiquement les classes internes et les parties et afficher les associations entre et au sein des classes.
+
+Schéma de structure composite en un coup d’œil
+
+Les diagrammes de structure composite montrent les parties internes d’une classe.
+Les pièces sont nommées : partName:partType[multiplicité]
+Les classes agrégées sont des parties d’une classe mais les parties ne sont pas nécessairement des classes, une partie est tout élément utilisé pour constituer la classe contenante.
+        <img src="img\10DiagSComposite.png" alt="Une belle image">
+Le diagramme de synchronisation n’a qu’une utilisation de 40 % et est rarement utilisé par les utilisateurs moyens</p>
 
     <h2>Diagramme de de présentation interactif</h2>
         <p id="paragraphe2"> Diagramme  de présentation interactif</p>
-        <img src="img\2classeUML.png" alt="Une belle image">
+        <img src="img\.png" alt="Une belle image">
 
          <h2>Diagramme de profil</h2>
         <p id="paragraphe2"> Diagramme  de profil </p>
-        <img src="img\2classeUML.png" alt="Une belle image">
+        <img src="img\.png" alt="Une belle image">
 
     </div>
 
