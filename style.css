@@ -64,8 +64,8 @@ nav a:hover {
 }
 
 img {
-  width:; /* Définir une largeur fixe */
-  height: ; /* Définir une hauteur fixe */
+  width: 60%; /* Définir une largeur fixe */
+  height: 60% ; /* Définir une hauteur fixe */
 }
 
 .point {
